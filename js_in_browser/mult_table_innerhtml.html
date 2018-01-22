@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        #myList {
+            font-size: 2em;
+            color: blue;
+            padding: 30px;
+            margin: 30px;
+            list-style: none;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <ul id="myList">
+        
+    </ul>
+    
+    <script>
+        let number = prompt("Enter a number:");
+        
+        for (let i = 1; i < number; i++ ) {
+            let result = i * number;
+            document.getElementById("myList").innerHTML += "<li>" + number + " X " + i + " = " + result + "</li>";
+        }
+    </script>
+    
+</body>
+</html>

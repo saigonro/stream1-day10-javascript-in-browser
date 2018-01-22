@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="myImage" src="" style="width: 100px;">
+    
+    <script>
+        function confirmBox() {
+            var chooseSome = confirm("Do you want the light on?");
+            if (chooseSome == true) {
+                document.getElementById('myImage').src='img/bulbon.gif';
+            }
+            else {
+                document.getElementById('myImage').src='img/bulboff.gif';
+            }
+        }
+        confirmBox();
+    </script>
+    
+</body>
+</html>

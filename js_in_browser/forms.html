@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        #submitted {
+            display: none;
+            color: green;
+            font-size: 2em;
+            background-color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <form name="myForm" onsubmit="formSubmitted()">
+        Enter Your Name: <input type="text" name="name"/><br><br>
+        Enter Your Mail: <input type="email" name="email"/><br><br>
+        <input type="submit" value="Submit"/>
+        <!--<p id="submitted">Your form was submitted successfully!</p>-->
+    </form>
+    
+    <script>
+        function formSubmitted() {
+            // document.getElementById("submitted").style.display="block";
+            let name = document.forms["myForm"]["name"].value;
+            let email = document.forms["myForm"]["email"].value;
+            alert("Hey " + name + " we will reply soon to you by email to: " + email);
+        }
+    </script>
+    
+</body>
+</html>
